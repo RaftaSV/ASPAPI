@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "13597564-e4a0-4b37-9858-d68ca7540318",
+		"name": "asp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14917719"
+	},
+	"item": [
+		{
+			"name": "getPadres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5119/padres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5119",
+					"path": [
+						"padres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPadreByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5119/padres/6668671dad36bb94c6cdcdfb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5119",
+					"path": [
+						"padres",
+						"6668671dad36bb94c6cdcdfb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertPadre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"nombre\": \"Laura Méndez\",\r\n        \"tipoVivienda\": \"Casa\",\r\n        \"cantHijos\": 2,\r\n        \"recibeAyuda\": false,\r\n        \"telefono\": \"6311-4864\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5119/padres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5119",
+					"path": [
+						"padres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePadre",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"jose Pérez\",\r\n    \"tipoVivienda\": \"Casa\",\r\n    \"cantidadHijos\": 3,\r\n    \"recibeAyuda\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5119/padres/6668671dad36bb94c6cdcdfb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5119",
+					"path": [
+						"padres",
+						"6668671dad36bb94c6cdcdfb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePadre",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"jose Pérez\",\r\n    \"tipoVivienda\": \"Casa\",\r\n    \"cantidadHijos\": 3,\r\n    \"recibeAyuda\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5119/padres/6668671dad36bb94c6cdcdfb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5119",
+					"path": [
+						"padres",
+						"6668671dad36bb94c6cdcdfb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
